@@ -1,0 +1,131 @@
+.detailsContainer{
+  padding: 10px;
+  height: 100px;
+  width: 200px;
+  /* background-image: url(https://png.pngtree.com/background/20210712/original/pngtree-modern-double-color-futuristic-neon-background-picture-image_1181573.jpg); */
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  background-size: 100px 100px;
+  box-sizing: border-box;
+  display: flex;
+  transform: translateX(100px);
+  flex-direction: column;
+}
+
+.detailsContainer img {
+width: 100%;
+height: 100%;
+object-fit: contain;
+}
+
+.detailsContainer::before {
+  content: "";
+  position: absolute;
+  top: 70%;
+  left: -80px;
+  height: 2px;
+  width: 98px;
+  background: white;
+}
+.detailsContainerLeft{
+  padding: 10px;
+  height: 100px;
+  width: 200px;
+  /* background-image: url(https://png.pngtree.com/background/20210712/original/pngtree-modern-double-color-futuristic-neon-background-picture-image_1181573.jpg); */
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+  background-size: 100px 100px;
+  transform: translateX(-100px);
+  display: flex;
+  flex-direction: column;
+}
+.detailsContainerLeft::before {
+  content: "";
+  position: absolute;
+  top: 70%;
+  right: -90px;
+  height: 2px;
+  width: 98px;
+  background: white;
+}
+
+.detailsContainerLeft img {
+width: 100%;
+height: 100%;
+object-fit: contain;
+}
+
+.position_back{
+position: fixed;
+top: 3%;
+left: 1%;
+width: 50px;
+height: 50px;
+z-index: 1;
+padding: 0;
+background-color: rgb(196, 196, 255);
+}
+
+.position_back img {
+width: 100%;
+}
+
+.position_cross{
+position: fixed;
+top: 3%;
+right: 1%;
+z-index: 1;
+width: 50px;
+height: 50px;
+padding: 0;
+background-color: rgb(196, 200, 255);
+} 
+
+.position_cross img {
+width: 100%;
+}
+.hidden{
+visibility: hidden;
+}
+
+
+
+#linescss{
+position: absolute;
+right: -81px;
+transform: rotate3d(44,-30,60,91deg);
+height: 350px;
+top: -30px;
+}
+#frontcss{
+position: absolute;
+right: 118px;
+transform: rotate3d(-10,-57,10,112deg);
+height: 150px;
+top: -25px;
+
+}
+#frontimg{
+position: absolute;
+right: 170px;
+transform: rotate3d(1,1,1,-2deg);
+height: 100px;
+top: 12px;
+}
+#backcss{
+position: absolute;
+right: -106px;
+transform: rotate3d(-10,-7,10,357deg);
+height: 150px;
+top: -93px;
+}
+#backimg{
+position: absolute;
+right: -216px;
+transform: rotate3d(1,1,1,-2deg);
+height: 100px;
+top: -78px;
+}
